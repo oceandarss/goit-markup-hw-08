@@ -1,0 +1,104 @@
+.subscribe-box {
+
+    @media screen and (max-width: 1139px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    @media screen and (min-width: 1140px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+        margin-left: 93px;
+    }
+}
+
+.footer-form {
+    @media screen and (max-width: 1139px) {
+        text-align: center;
+
+    }
+
+    @media screen and (min-width: 1140px) {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 34px;
+    }
+}
+
+.footer-form__mail {
+    height: 50px;
+    padding: 15px 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    outline: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 4px;
+    background-color: $thirstlyBackgroundColor;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (max-width: 1139px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        width: 358px;
+    }
+}
+
+.subscribe-box__button {
+    color: $primaryWhiteColor;
+    background-color: $accentColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 28px 10px 29px;
+    min-width: 143px;
+    margin-left: 12px;
+    border: none;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    @media screen and (max-width: 1139px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.subscribe-box__icon {
+    margin-left: 10px;
+}

@@ -1,0 +1,125 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $thirstlyBackgroundColor;
+}
+
+.footer-nav {
+
+    @media screen and (max-width: 1139px) {
+        text-align: center;
+       margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1140px) {
+    min-width: 231px;
+    }
+}
+
+.footer-box--first {
+
+    @media screen and (min-width: 1140px) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.footer-container {
+    @media screen and (min-width: 1140px) {
+        display: flex;
+    }
+}
+
+.footer-box {
+    @media screen and (min-width: 1140px) {
+        display: flex;
+        align-items: center;
+        margin-left: 70px;
+    }
+}
+
+.footer-tablet {
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1140px) {
+        display: flex;
+    }
+}
+
+.footer-media {
+    @media screen and (min-width: 768px) and (max-width: 1139px) {
+        margin-left: 65px;
+    }
+}
+
+.footer-nav__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0;
+    margin-bottom: 9px;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.footer-nav__address>li {
+    text-decoration: none;
+    color: $primaryWhiteColor;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-media__title,
+.subscribe-box__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $primaryWhiteColor;
+    margin-top: 0;
+
+    @media screen and (max-width: 1139px) {
+        text-align: center;
+    }
+}
+
+
+.footer-media__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+}
+
+.footer-media__link {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: $primaryWhiteColor;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+        cursor: pointer;
+    }
+}
